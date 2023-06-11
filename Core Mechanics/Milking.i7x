@@ -1,5 +1,6 @@
 Version 2 of Milking by Core Mechanics begins here.
 [ Version 2 - exported from the story.ni and put into its own file]
+[ Version 2.1 - Expanded milking scenes to make them less dull - Fenekku]
 
 Table of Game Objects (continued)
 name	desc	weight	object
@@ -57,13 +58,13 @@ lastBreastMilking is a number that varies. [@Tag:NotSaved] lastBreastMilking is 
 
 Check PlayerBreastMilking:
 	if Nipple Count of Player is 0:
-		say "You don't appear to have anything worth milking." instead;
+		say "Unfortunately, as much as you may attempt to milk yourself, all you get is the uncomfortable and awkward sensation of having just groped your own chest." instead;
 	if Breast Size of Player < 2:
-		say "You don't appear to have anything worth milking." instead;
+		say "Looking down at your chest, you reach towards a nipple and try to tug and knead at it, being rewarded with nothing but the sensation of groping yourself." instead;
 	if BodyName of Player is not listed in Infections of AlwaysLacList and Cunt Count of Player < 1 and player is not mpreg_ok:
-		say "Your breasts don't seem ready to lactate." instead;
+		say "Reaching up to cup one of your breasts, you use your fingers to tweak and tug at your nipple. Your breasts don't seem to produce any milk at the moment, however." instead;
 	else if lastBreastMilking - turns < 3:
-		say "Your breasts have been drained recently. You'll need to wait before another worthwhile milking." instead;
+		say "Reaching up to grope at your own breasts, you cringe a bit at how sensitive your nipples still are after your last milking. You don't think tugging at your tits this soon after your last milking will produce anything worthwhile." instead;
 
 Carry out PlayerBreastMilking:
 	let MilkVolume be 0;[calculate depending on breast count and size]
@@ -84,13 +85,13 @@ Carry out PlayerBreastMilking:
 	if there is a name of Searchstring in the Table of Random Critters:
 		choose a row with name of Searchstring in the Table of Random Critters;
 		if MilkItem Entry is not "" and MilkItem Entry is not " ":
-			say "You milk your own breasts, gathering the rich fluid produced in bottles and labeling them.";
+			say "Taking some time to settle down with some milk bottles, you reach up to start kneading at your breasts. Letting out a small hum as you work to stimulate your mammaries, you're soon rewarded with the beading of milk on the tips of your nipples and a feeling of building relief. Reaching down with one hand, you work one teat at a time, placing the bottle below your nipple as you tug and massage, encouraging the milk to flow. Each spurt tugged out of your nipples lands in the bottle with only some leaking out down the side due to bad aim or a particularly energetic spurt. Your chest warms with the relieving sensation, not quite sexual, but enjoyable nonetheless. Whenever a bottle fills, you pause in your tugging to place the bottle down, before bringing up a new one to resume the draining, planning to label them when you're done.";
 			if MilkVolume is 9 or MilkVolume is greater than 9:
 				let MilkVolume be 8;
-				say "     As you run out of empty bottles, the remaining milk starts streaming down and forms a puddle on the ground.";
+				say "Unfortunaly, the amount of milk you seem capable of producing quickly overwhelms your supply of empty bottles. Unwilling to mix your potentially infectious milk with any other liquids, but also unwilling to stop before you're properly drained, you allow the milk to leak out and form a puddle on the ground below. Bringing both hands up to work both breasts at the same time once again, you squeeze and tug, teasing your nipples and spurting milk onto the ground below. You create quite the sizeable puddle in the process, but eventually even your production can't keep up, and the stream of milk slows to a stop. You keep tugging a few more times, ensuring you're completely empty - or close enough - before stopping. Panting a bit from the pleasant sensation of having just milked yourself, you start packing the bottles away, wiping up any of the milk that'd dripped onto you before standing up to move on.";
 			ItemGain MilkItem Entry by MilkVolume;
 		else: [no milk item exists]
-			say "You milk your own breasts, providing relief from their fullness.";
+			say "Taking some time to settle down, you reach up to start kneading at your breasts. Letting out a small hum as you start to stimulate your mammaries, you're soon rewarded with the beading of milk on the tips of your nipples and a feeling of building elief. Working both teats at the same time, you encourage the milk to flow, leaning forward to try and avoid getting it all over yourself. Each spurt tugged out of your nipples lands on the ground, building into a growing puddle and warming your chest with growing satisfaction. Not quite sexual, but enjoyable nonetheless, you keep up your tugging and massaging until your breasts are fully drained. Packing up once done, you wipe away any milk that had landed on you before standing up ready to move on.";
 
 PlayerCockmilking is an action applying to nothing.
 understand "jerkoff","jerk off","beatoff","beat off","whackoff","whack off","wankoff","wank off","wank","pawoff","paw off","fap","beat my meat","choke the chicken" as PlayerCockmilking.
