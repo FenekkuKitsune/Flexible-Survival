@@ -99,10 +99,10 @@ lastCockMilking is a number that varies. [@Tag:NotSaved] lastCockMilking is usua
 
 check PlayerCockmilking:
 	if Cock Count of Player is 0:
-		say "You don't appear to have a cock.";
+		say "Looking down at your crotch you consider the idea of milking yourself, only to remember that you currently lack a penis to milk.";
 		stop the action;
 	if lastCockMilking - turns < 1:
-		say "Your balls have been drained recently. You'll need to wait before another worthwhile milking.";
+		say "As much fun as it is to masturbate, your balls feel empty and your dick is a bit tender after the last time. You get the feeling all you'll do is make yourself sore.";
 		stop the action;
 
 Carry out PlayerCockmilking:
@@ -116,9 +116,9 @@ Carry out PlayerCockmilking:
 	if there is a name of Searchstring in the Table of Random Critters:
 		choose a row with name of Searchstring in the Table of Random Critters;
 		if CumItem Entry is not "" and CumItem Entry is not " ":
-			say "You jerk off your [Cock of Player] cock, holding a plastic bottle to catch what semen you produce. After labeling it, you pack it away.";
+			say "Settling down for a moment, you reach down to your flaccid shaft, teasing and rubbing at it to get yourself hard. With a gentle throbbing, your [Cock of Player] cock stirs, hardening between your legs and into your waiting hand. Starting to stroke yourself, you reach over to grab an empty bottle, placing it between your legs ready to catch anything you produce. Once the bottle is in position, you reach down with that hand to tease and grope your balls as you stroke your cock, humming in pleasure as you work the shaft. Beading pre at your tip, you keep up your stroking, closing your eyes and imagining sex with some of the beasts you've seen out and about to more quickly reach your peak. The fantasizing helps, your dick throbbing more and more, and as you feel your peak approaching you open your eyes, grab the bottle, and aim. Stroking and throbbing, you moan as your balls draw up tight, before starting to pulse, your cum lancing out and landing in the positioned bottle, quickly starting to fill it with semen. Riding the high of orgasm, you twitch and jerk, draining your balls until your orgasm starts winding down. Panting a bit from the exertion of ejaculation, you cap the bottle, grabbing a label to place on the side, before moving your gear back into position and standing up ready to move on.";
 			ItemGain CumItem Entry by CumVolume;
 		else: [no cum item exists]
-			say "You jerk off your [Cock of Player] cock, spraying your seed onto the ground and providing some relief for your aching balls.";
+			say "Settling down for a moment, you reach down to your flaccid shaft, teasing and rubbing at it to get yourself hard. With a gentle throbbing, your [Cock of Player] cock stirs, hardening between your legs and into your waiting hand. Starting to stroke yourself, you reach down with your other hand to tease and grope your balls, humming in pleasure as you work the shaft. Beading pre at your tip, you keep up your stroking and fondling, closing your eyes to imagine sex with some of the more appealing beasts you've seen out and about. Fantasizing helps, your dick throbbing more and more as you feel your peak approaching. Opening your eyes, you look down at your dick as your balls start drawing up tight, before starting to pulse along with your shaft, your cum lancing out and landing on the ground in front of you. Riding the high of orgasm, you twitch and jerk, draining your balls until your orgasm starts winding down, leaving you panting a bit from the exertion. Moving your gear back into place once you've settled down, you stand up and get ready to move on.";
 
 Milking ends here.
