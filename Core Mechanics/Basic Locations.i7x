@@ -386,7 +386,7 @@ Description of Abandoned Residence is "[AbandonedResidenceDesc]".
 
 to say AbandonedResidenceDesc:
 	say "     Standing inside the abandoned residence all you can hear is the soft ticking of the nearby grandfather clock. If it weren't for your experiences, standing in here would make you think that everything was okay. Unfortunately, that wasn't the case, and if you looked closer at your surroundings you'd see evidence of this place's sudden abandonment. Some items on the desk in the hallway had been knocked over, a picture frame having been smashed in the process. Other items were simply missing, with marks showing where they had been as whoever lived here had packed in a rush. Thankfully, as far as you could tell, there's no evidence of infection within the building, and the place was clean. [if library computer is powered]The only thing that stops you from considering this a good place to stay is the lack of power, lacking a backup generator like the Library has[else]With the building now powered, this would be a great place to stay. Given the situation out in the city, though, you're unsure how long it'd last, and the backup generator at the library is far too reliable.[end if].";
-	if "Cain Moved" is listed in Traitos of Cain:
+	if "Cain Moved" is listed in Traits of Cain:
 		say "     Cain is laying on the couch nearby, his massive balls resting between his legs as he reads a book he's found. You're happy he's settling in with ways to entertain himself.";
 
 instead of sniffing Abandoned Residence:
