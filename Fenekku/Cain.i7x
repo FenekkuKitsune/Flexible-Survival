@@ -6,6 +6,7 @@ Cain by Fenekku begins here.
 [Resolution of Smashed Boat:                ]
 [1: Learned about Cain's musk               ]
 [2: Provoked Cain                           ]
+[3: Cain moved to the Abandoned Residence   ]
 [100: Cain was ignored                      ]
 
 Section 1 - NPC declaration
@@ -161,6 +162,7 @@ to CainMigration:
     WaitLineBreak;
     now Resolution of Smashed Boat is 3;
     now Smashed Boat is resolved;
+    add "Cain Moved" to Traits of Cain;
     Cain is now in Abandoned Residence;
     move player to Abandoned Residence;
 
