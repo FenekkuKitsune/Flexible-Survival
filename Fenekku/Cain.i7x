@@ -63,7 +63,20 @@ to say CainDesc:
     say "     Cain is a large, extremely well-endowed hippogriff with near pitch-black feathers and fur. His beak and talons are a dark grey, making him more of a void in your sight than an actual living thing. Despite the lack of color on his body, his eyes are a bright striking green. Cain's body is very predatory, despite his herbivorous hindquarters, with a sharp beak upon his face and similarly sharp talons on his forelegs. Being quadrupedal, there's very little that Cain could otherwise do to hide his genitals - not that he minds - ignoring the fact that his genitals are excessively large, his balls in particular. A source of his everpresent, arousing musk, Cain has two massive testicles hanging between his hindlegs, forcing him to walk a bit bowlegged with his hoofed hindlegs. Upon his rear is a leonine tail, tufted on the tip, with extra horsehair flicking down over his rear doing nothing to hide his assets.";
 
 
-Section 2 - Events
+Section 2 - Menus
+
+to CainSexMenu:
+    say "     Cain is looking at you with interest, wondering what you're thinking to do with him.";
+    let Cain_Sex_Choices be a list of text;
+    add "Give his swollen sack a massage" to Cain_Sex_Choices;
+    let Cain_Sex_Choice be what the player chooses from Cain_Sex_Choices;
+    if Cain_Sex_Choice is:
+        -- "Give his swollen sack a massage":
+            LineBreak;
+            
+
+
+Section 3 - Events
 
 Table of GameEventIDs (continued)
 Object	Name
@@ -119,13 +132,29 @@ to say ResolveEvent Smashed Boat:
         LineBreak;
         say "     Your eyes can't help but stray to his massive sack, wet from it's time in the water, before you bring them back to his face. He doesn't seem to mind, however, bringing a chip to his beak and crunching on it, swallowing, before speaking again. 'So, you said that the people I tried to talk to were probably infected, right?' You nod in response to the question. 'I've seen all the crazy people out there, I just assumed it was my musk doing it this entire time.' He sighs. 'How many are left out there like you?' You can see his mood souring as his thoughts run wild, and you make an effort to reassure him; you weren't the only one with your mind intact, [if number of collected people > 0]in fact, you were starting to create a sort of safe-haven for those with their minds intact[else]you recall the various people with their minds seemingly still intact among your exploration[end if] Cain perks up at your words, smile returning to his beak. 'Really? That's good. Though, I'll admit I'm still hesitant to just approach out of the blue. Especially as given your reaction last time, I still need to manage my pheromones.' You nod, humming a bit as you think. Perhaps there's a way to help Cain with his musk issues?";
         LineBreak;
-        say "     Suggesting as much to Cain, the hippogriff nods, 'I've not left my den much for fear of getting jumped again. I mainly just do food runs, though I've admittedly not been very successful.' He gestures to the now-empty bag of chips, 'As such I don't really know of any way to stop my musk from being so potent.' You nod in response. Short of shrinking his sack or removing it entirely, the only thing you can think of is soap. You say as much to Cain, and he balks at you before shaking his head. 'Nope. I'm not getting rid of my dick. I'm a guy and I'm damn proud of it. I've not really thought about shrinking it down, though. Might have to test something.' As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";
-        WaitLineBreak;
-        say "     Stepping outside the shipwreck, you take a moment to breathe and clear your lungs while you wait for Cain, looking around as the waves lap nearby. It seemed like a moment of calm, with the only infected being far in the distance. Your eyes trace to something bobbing in the water against the hull of the ship. A small, inflatable octopus, a smile permanently plastered on its face with its eight tentacles pointing upwards around it. You consider it for a moment, realising that the tips of the tentacles were rather phallic. Would that make it a cocktopus? You chuckle at your mental joke, simultaneously wondering how in the world an inflatable octopus was made with dick-tipped tentacles. Your introspection is interrupted by the sound of disturbed sand, and you turn to see Cain stepping out of the hull with his backpack and bedroll on his back sitting between his wings.";
+        say "     Suggesting as much to Cain, the hippogriff nods, 'I've not left my den much for fear of getting jumped again. I mainly just do food runs, though I've admittedly not been very successful.' He gestures to the now-empty bag of chips, 'As such I don't really know of any way to stop my musk from being so potent.' You nod in response. Short of shrinking his sack or removing it entirely, there's not much you can think of. You say as much to Cain, and he balks at you before shaking his head. 'Nope. I'm not getting rid of my dick. I'm a guy and I'm damn proud of it. Not really thought of shrinking it down, though. Might have to test that.'";
         LineBreak;
-        say "     Cain seems to take a moment to breathe just as you did, his chest inflating before deflating. 'Mm, I'll miss the air here, to be honest. It's about as clean as it gets this close to the city.' He smiles, turning to you and walking up alongside. 'So, I should note that I don't really have any destination in mind. I haven't had the time to really scout out a new den. Do you have any suggestions?' Cain asks, the wind blowing away from you for the moment allowing him to stay close. You think for a moment before nodding, suggesting the library, saying that it's where you're holed up and [if number of collected people > 0]where you've taken others in need of a place to stay[else]where you plan to take others in need of a place to stay[end if]. 'Ah, strength in numbers. I don't really think putting me in a place with others for an extended period of time is a good idea.' You nod, before saying the library is pretty big, there's plenty of rooms he could stay in. He simply nods, before turning away. 'Well, we better get moving. I'll see this Library of yours and judge for myself.'";
+        say "     [bold type]You try to think of anything that might be able to help.[roman type]";
+        let Cain_Muskhelping_Choices be a list of text;
+        add "Suggest the obvious; draining his sack" to Cain_Muskhelping_Choices;
+        add "To test if shrinking his sack would help; try the Shrinking Shrooms" to Cain_Muskhelping_Choices;
+        add "Perhaps changing him might help? Infecting him with something else" to Cain_Muskhelping_Choices;
+        add "You can't think of anything at the moment" to Cain_Muskhelping_Choices;
+        let Cain_Muskhelping_Choice be what the player chooses from Cain_Muskhelping_Choices;
+        if Cain_Muskhelping_Choice is:
+            -- "Suggest the obvious; draining his sack":
+                LineBreak;
+                say "     Cain stares at you for a bit before responding. 'The fact that you didn't proposition me or jump me the first time we met makes me trust you.' He hops up from the bench, moving out alongside the table as he sighs. 'I'll also admit that I haven't been draining myself as you say, so that definitely might be a factor. First time after the change, I discovered that I become... Different during such times.' He shakes his head. 'Not bad, of course, just different. I think it's worth a try, though.' He walks up to you, the musk in the hull becoming stronger the longer you're here, but you want to help. You say as much, saying that you want to help him with his issue.";
+                CainSexMenu;
+            -- "To test if shrinking his sack would help; try the Shrinking Shrooms":
+                LineBreak;
+            -- "Perhaps changing him might help? Infecting him with something else":
+                LineBreak;
+            -- "You can't think of anything at the moment":
+                LineBreak;
+                
+        [say "     As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";]
         WaitLineBreak;
-        [Putting Cain at the library for now, can move him to a different location later.]
         CainMigration;
                 
 to ProvokeCain:
@@ -154,6 +183,10 @@ to ProvokeCain:
         say "     Raising your hands, you placate the hippogriff, apologising for any offense. He doesn't seem to want to hear it at the moment, however, one of his hindlegs kicking the floorboard with a clop sound. Deciding to heed the warning, you back up until you're out of the boat, then turn and walk away. Perhaps if you come back later you can apologise for antagonising him.";
 
 to CainMigration:
+    say "     Stepping outside the shipwreck, you take a moment to breathe and clear your lungs while you wait for Cain, looking around as the waves lap nearby. It seemed like a moment of calm, with the only infected being far in the distance. Your eyes trace to something bobbing in the water against the hull of the ship. A small, inflatable octopus, a smile permanently plastered on its face with its eight tentacles pointing upwards around it. You consider it for a moment, realising that the tips of the tentacles were rather phallic. Would that make it a cocktopus? You chuckle at your mental joke, simultaneously wondering how in the world an inflatable octopus was made with dick-tipped tentacles. Your introspection is interrupted by the sound of disturbed sand, and you turn to see Cain stepping out of the hull with his backpack and bedroll on his back sitting between his wings.";
+    LineBreak;
+    say "     Cain seems to take a moment to breathe just as you did, his chest inflating before deflating. 'Mm, I'll miss the air here, to be honest. It's about as clean as it gets this close to the city.' He smiles, turning to you and walking up alongside. 'So, I should note that I don't really have any destination in mind. I haven't had the time to really scout out a new den. Do you have any suggestions?' Cain asks, the wind blowing away from you for the moment allowing him to stay close. You think for a moment before nodding, suggesting the library, saying that it's where you're holed up and [if number of collected people > 0]where you've taken others in need of a place to stay[else]where you plan to take others in need of a place to stay[end if]. 'Ah, strength in numbers. I don't really think putting me in a place with others for an extended period of time is a good idea.' You nod, before saying the library is pretty big, there's plenty of rooms he could stay in. He simply nods, before turning away. 'Well, we better get moving. I'll see this Library of yours and judge for myself.'";
+    WaitLineBreak;
     say "     Cain leads the way at first, away from his former den and across the beach. All you're able to see for a good bit is his ass, shaking with his waddling gait with his balls pendulously swinging. [if player is keenscented]Your nose is able to detect his musk, left behind in a trail as he walks, the wind blowing the majority of it away but some still wafting towards you[else]You can't deny that the sight isn't pleasing, but you doubt propositioning Cain in the middle of nowhere would be a good idea[end if]. Once you're both clear of the beach, Cain slows his pace, letting you catch up to walk beside him. 'So where were you when this all began?' Cain starts up an idle chat as you go, making you smile as you start telling him your story. You see no reason to withhold that information, especially with everything going on. Cain also tells his own story when you ask; how he was caught out in the open when everything began, and how much he enjoyed his change despite himself. He also tells on how lonely he felt, thinking that his musk was making people go mad, resulting in his self-inflicted exile.";
     LineBreak;
     say "     You comment that him hiding himself away may have saved him from becoming as mindless as those he encountered. Though he simply nods in response, you think your words do improve his dampened mood a bit. Through the idle conversation you come upon the front doors of the library, and Cain slows to a stop before the front doors. 'Hm, I don't actually think me staying in the same building as everyone else is a good idea.' You pause, about to open the doors before turning and realising that admittedly he was right. You could already smell it, with the wind gently blowing, and if you're smelling it in an open space you can imagine what it'd be like in an enclosed one. Humming for a moment, your eyes are drawn to the abandoned houses to the north of the Library, and you nod. Pointing off towards them, you direct Cain's attention to the closest house and suggest he take that as his den."
@@ -167,7 +200,7 @@ to CainMigration:
     move player to Abandoned Residence;
 
 
-Section 3 - Endings
+Section 4 - Endings
 
 Table of GameEndings (continued)
 Name (text)	Type (text)	Subtype (text)	Ending (rule)	Priority (number)	Triggered (truth state)
