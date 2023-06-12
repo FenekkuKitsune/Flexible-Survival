@@ -120,20 +120,7 @@ to say ResolveEvent Strange Wave:
 
 Section 5 - Smashed boat
 
-Table of GameEventIDs (continued)
-Object	Name
-Smashed Boat	"Smashed boat"
-Smashed Boat	"Smashed Boat"
-
-Smashed Boat is a situation.
-ResolveFunction of Smashed Boat is "[ResolveEvent Smashed Boat]".
-Sarea of Smashed Boat is "Beach".
-
-to say ResolveEvent Smashed Boat:
-	say "     As you go along the beach, you come across a boat smashed up against some rocks. Seeing no one around, you move closer to investigate. From what you can tell, it looks like whoever was on this boat was trying to flee whatever was going on in the city, having stocked up on supplies, and a chart to the next city down the way. Unfortunately, it doesn't look like they made it that far... but you do decide to take some of their supplies with you, since you doubt they will be needing them anymore wherever or whatever they now are.";
-	ItemGain food by 2;
-	ItemGain water bottle by 1;
-	now Smashed Boat is resolved;
+[Moved to Cain, rewritten by Fenekku]
 
 
 Section 6 - Dragon voyeurism
