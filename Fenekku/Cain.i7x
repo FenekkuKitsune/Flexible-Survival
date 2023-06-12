@@ -15,7 +15,7 @@ object	name
 Cain "Cain"
 
 Cain is a man.
-ScaleValue of Cain is 3. [human sized]
+ScaleValue of Cain is 4. [Larger than human-sized]
 Body Weight of Cain is 6. [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 Body Definition of Cain is 7. [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
 [Body Adjective is generated out of the body weight and body definition and can be used in scenes - one word descriptive adjective depending on weight and definition groups: low weight group: skinny/slender/lithe; mid weight group: average/fit/muscled; high weight group: pudgy/husky/jacked]
@@ -26,12 +26,12 @@ Tongue Length of Cain is 4. [length in inches]
 Breast Size of Cain is 0. [cip size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
 Nipple Count of Cain is 2. [count of nipples]
 Asshole Depth of Cain is 4. [inches deep for anal fucking]
-Asshole Tightness of Cain is 1. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+Asshole Tightness of Cain is 3. [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
 Cock Count of Cain is 1. [number of cocks]
 Cock Girth of Cain is 4. [thickness 1-5, thin/slender/average/thick/monstrous]
 Cock Length of Cain is 6. [length in inches]
 Ball Count of Cain is 2. [allowed numbers: 1 (uniball), 2 or 4]
-Ball Size of Cain is 5. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
+Ball Size of Cain is 6. [size of balls 1-7: "acorn-sized", "dove egg-sized", "chicken egg-sized" "goose-egg sized", "ostrich-egg sized", "basketball-sized", "beachball-sized"]
 Cunt Count of Cain is 0. [number of cunts]
 Cunt Depth of Cain is 0. [penetrable length in inches; some minor stretching allowed, or more with Twisted Capacity]
 Cunt Tightness of Cain is 0. [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
@@ -45,7 +45,7 @@ PlayerFucked of Cain is false.
 OralVirgin of Cain is false.
 Virgin of Cain is true.
 AnalVirgin of Cain is true.
-PenileVirgin of Cain is true.
+PenileVirgin of Cain is false.
 SexuallyExperienced of Cain is false.
 TwistedCapacity of Cain is false. [Twisted Characters can take any penetration, no matter the size]
 Sterile of Cain is false. [steriles can't knock people up]
@@ -163,7 +163,7 @@ to CainMigration:
     now Smashed Boat is resolved;
     Cain is now in Abandoned Residence;
     move player to Abandoned Residence;
-    
+
 
 Section 3 - Endings
 
