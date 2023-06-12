@@ -59,7 +59,7 @@ to say CainScent:
     say "     Your nose burns a little at the sheer virility in his scent, pheromones being produced by him in waves. It arouses you immensely, and you have to bring your hand up to block your nose for a moment so as to not become an aroused mess.";
 
 to say CainDesc:
-    say "     ";
+    say "     Cain is a large, extremely well-endowed hippogriff with near pitch-black feathers and fur. His beak and talons are a dark grey, making him more of a void in your sight than an actual living thing. Despite the lack of color on his body, his eyes are a bright striking green. Cain's body is very predatory, despite his herbivorous hindquarters, with a sharp beak upon his face and similarly sharp talons on his forelegs. Being quadrupedal, there's very little that Cain could otherwise do to hide his genitals - not that he minds - ignoring the fact that his genitals are excessively large, his balls in particular. A source of his everpresent, arousing musk, Cain has two massive testicles hanging between his hindlegs, forcing him to walk a bit bowlegged with his hoofed hindlegs. Upon his rear is a leonine tail, tufted on the tip, with extra horsehair flicking down over his rear doing nothing to hide his assets.";
 
 
 Section 2 - Events
