@@ -364,6 +364,39 @@ instead of sniffing George's Animal Emporium:
 
 Table of GameRoomIDs (continued)
 Object	Name
+Northern Main Street	"Northern Main Street"
+
+Northern Main Street is north of Main & 7th Street.
+The earea of Northern Main Street is "Outside".
+Description of Northern Main Street is "[NMainDesc]".
+
+to say NMainDesc:
+	say "     Standing on the side of the street north of the Grey Abbey Library, you're able to see more residential buildings as the street leads off into the city proper. The buildings are rather old, having been built around the time the Library had been. A couple of the buildings still have windows open, while the front door of one is completely ajar, almost as if they'd been abandoned entirely in the panic of the outbreak. The area looks rather beautiful, with vibrant and colourful front gardens for the majority of the surrounding buildings. If it weren't for the current situation, you'd imagine there'd be people out tending to said gardens. To the [link]south[as]south[end link] is the increasingly familiar sight of the Grey Abbey Library at the T intersection of 7th and Main. The residential buildings continue for quite a ways and with the state of the majority of them it seems rather safe, for the moment.";
+
+instead of sniffing Northern Main Street:
+	say "     The air here is clean and clear, away from the busier parts of the city. The scents of various flowers coming from the gardens around you giving a nice calming scene.";
+
+Table of GameRoomIDs (continued)
+Object	Name
+Abandoned Residence	"Abandoned Residence"
+
+Abandoned Residence is east of Northern Main Street.
+The earea of Abandoned Residence is "Outside".
+Description of Abandoned Residence is "[AbandonedResidenceDesc]".
+
+to say AbandonedResidenceDesc:
+	say "     Standing inside the abandoned residence all you can hear is the soft ticking of the nearby grandfather clock. If it weren't for your experiences, standing in here would make you think that everything was okay. Unfortunately, that wasn't the case, and if you looked closer at your surroundings you'd see evidence of this place's sudden abandonment. Some items on the desk in the hallway had been knocked over, a picture frame having been smashed in the process. Other items were simply missing, with marks showing where they had been as whoever lived here had packed in a rush. Thankfully, as far as you could tell, there's no evidence of infection within the building, and the place was clean. [if library computer is powered]The only thing that stops you from considering this a good place to stay is the lack of power, lacking a backup generator like the Library has[else]With the building now powered, this would be a great place to stay. Given the situation out in the city, though, you're unsure how long it'd last, and the backup generator at the library is far too reliable.[end if].";
+	if Resolution of Smashed Boat is 3:
+		say "     Cain is laying on the couch nearby, his massive balls resting between his legs as he reads a book he's found.";
+
+instead of sniffing Abandoned Residence:
+	if Resolution of Smashed Boat is 3:
+		say "     With Cain having taken up ownership of the house, there's the constant smell of musk emanating off of him and lingering inside. You take care not to take too deep of a sniff, not wanting to become an aroused mess.";
+	else:
+		say "     The air smells musty but clean, stale from the windows and doors being left open. You'd imagine that would be solved by simply opening one of said windows, however you don't want to drain the house of warmth.";
+
+Table of GameRoomIDs (continued)
+Object	Name
 Breakroom	"Breakroom"
 
 Breakroom is west of Half-Renovated Room.

@@ -161,6 +161,9 @@ to CainMigration:
     WaitLineBreak;
     now Resolution of Smashed Boat is 3;
     now Smashed Boat is resolved;
+    Cain is now in Abandoned Residence;
+    move player to Abandoned Residence;
+    
 
 Section 3 - Endings
 
