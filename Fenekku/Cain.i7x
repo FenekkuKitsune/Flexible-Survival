@@ -161,9 +161,9 @@ to say ResolveEvent Smashed Boat:
 				LineBreak;
 			-- "You can't think of anything at the moment":
 				LineBreak;
-	[say "     As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";]
-	WaitLineBreak;
-	CainMigration;
+		[say "     As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";]
+		WaitLineBreak;
+		CainMigration;
 
 to ProvokeCain:
 	say "     You smirk at him, letting your eyes run over his body again, lingering on his leg-bowing balls before returning to his face, his frown deepening. You say 'Well, I was just admiring a rather well-endowed hippogriff'. Your expression falters a bit when he turns to face you fully, his expression gaining a tint of anger. 'You should leave.'";
@@ -206,6 +206,7 @@ to CainMigration:
 	TraitGain "Cain Moved" for Cain;
 	Cain is now in Abandoned Residence;
 	move player to Abandoned Residence;
+	say "     Cain looks around as he walks through the doorway, a smile creeping up on his face, 'This is a nice place.' He clops his way up to the Grandfather clock while you step to the side, giving him more room. 'I haven't seen one of these in a long time.' The clock keeps ticking away, well-cared-for mechanical parts operating to the to-and-fro swing of the pendulum. Turning away from the clock, Cain walks past you to hop up onto the couch, sighing as his balls sink a ways into the fabric. 'This is nice. Definitely a good new den. [if library computer is not powered]I'll have to head over to the library every so often to have a shower, I definitely miss that.[end if] I'll be a good neighbour, visit every so often. I'd hop you'd do the same?' Cain smiles up at you.";
 
 Section 4 - Endings
 
