@@ -4,6 +4,9 @@ Cain by Fenekku begins here.
 
 [Original Smashed Boat event by Sarokcat, rewritten for use by Fenekku]
 
+[Traits of Cain:												]
+["Cain Moved": Cain has been moved to the Abandoned Residence	]
+
 [Resolution of Smashed Boat:				]
 [1: Learned about Cain's musk				]
 [2: Provoked Cain							]
@@ -101,7 +104,7 @@ ResolveFunction of Smashed Boat is "[ResolveEvent Smashed Boat]".
 Sarea of Smashed Boat is "Beach".
 
 to say ResolveEvent Smashed Boat:
-	if Resolution of Smashed Boat is 0:
+	if Resolution of Smashed Boat is 0: [First encounter]
 		say "     As you go along the beach, you come across a boat smashed up against some rocks. Halfway in the water with the side having ripped open, creating a convenient entryway inside. Keeping an eye out as you approach the boat, you keep cautious for anything that may be within. You hear little except the sound of moving water, what you smell however is a different story entirely. An odd scent reaching your nose, odd but interesting. You find yourself encouraged to approach, slinking into the gap in the boat's hull, looking around as your eyes adjust to the relative gloom within. Immediately your eyes are drawn to the seeming homeliness of the area. It almost seemed setup as some manner of home, with a bench and what appeared to be beach chairs on one side of the room with a backpack sitting beside. Nothing was overly notable about that, aside from the soda and packet of chips sitting open on the table alongside what appeared to be a gas lamp providing illumination. A bedroll was unrolled on one of the beach chairs, reclined back into a laying position likely used by the occupant. Said occupant, of course, was still in the small hovel, as apparent by the shape moving in the darkness and the continued sounds of moving water.";
 		LineBreak;
 		say "     The sound of grumbling emanates from the figure, their front half sitting outside the water while the majority of their legs are submerged within the disturbed surface. [if player is nocturnal]Your eyes are able to pick out details about the figure, however their colouration appeared to be completely black, so outside of general shape and movement it was difficult. You were able to catch glimpses of fur and feathers, a beak at the front and what appeared to be talons on what were apparently hindlegs. Your gaze sweeping back, you were able to catch a long leonine tail, but not much else due to its position in the water. Trailing your eyes back up, you notice that it's gone eerily quiet, and two green predatory orbs are now watching you. [else]You're unable to pick out many details, however straining does allow you to better glimpse their form. There appeared to be the silhouette of a thin, tubelike tail on their rear, and their face appeared to have some manner of protrusion. Any further details are lost to you, however as the shine of predatory eyes catch your attention. [end if]";
@@ -118,8 +121,7 @@ to say ResolveEvent Smashed Boat:
 			-- "Tell him what you were looking at, in no uncertain terms.":
 				LineBreak;
 				ProvokeCain;
-				WaitLineBreak;
-				now Resolution of Smashed Boat is 2;
+				now Resolution of Smashed Boat is 2; [Provoked Cain]
 			-- "Change the subject, ask what he was doing in the water.":
 				LineBreak;
 				say "     'You come into my den and ask me questions?' He looks incredulous, before he grumbles and moves fully over to the bench, sitting down on top of it, his legs spread wide over his sack, 'If you must know, I was washing and relaxing, before you came along.' He stares at you, making you feel awkward just standing there [if player is naked]making you feel awkward just standing there in the nude, his eyes unashamedly wandering over your form as you had done.[else]making you feel akward just standing there, his eyes practically boring into your face.[end if] While you're standing there, the odd smell you'd detected before entering the boat returns, stronger than before. You pause in your awkward shifting and sniff at the air, [if player is keenscented]your strong nose immediately picking up a heavy, musky scent that fills your lungs and suffuses your body with the beginnings of arousal.[else]you're able to detect little more than a slight scent of musk.[end if] The hippogriff perks up at the sound of your sniffing, his talons scratching against the table 'You can smell it, can't you?' You pause your sniffing at the question, looking at the hippogriff with a hesitant nod. 'Damn it! I just can't get rid of the smell.'";
@@ -128,15 +130,15 @@ to say ResolveEvent Smashed Boat:
 				LineBreak;
 				say "     While you've been standing there talking, the scent has been getting stronger and stronger, the pheromones wafting off his body affecting you more and more, your [if player is puremale]dick starting to harden[end if][if player is purefemale]pussy starting to wetten[end if][if player is herm]dick starting to harden while your pussy wettens[end if]. The hippogriff seems to notice your predicament, as he shakes his head. 'Well, you don't seem immune, at least. You should go. Before you do, though. My name is Cain.' You smile and give him your name as well, before taking his advice and turning to leave. You should come back later to give Cain time to sort out his musk situation.";
 				WaitLineBreak;
-				now Resolution of Smashed Boat is 1;
+				now Resolution of Smashed Boat is 1; [Learned about Cain's musk]
 				LibidoBoost 10;
 			-- "Apologise and say you were just leaving, making sure not to disturb him again.":
 				LineBreak;
 				say "     You apologise for staring at him, before explaining that you'll leave his den, not wanting to bother him too much. He raises an eyebrow at your apologies before huffing, 'Then stop staring and go.' He rumbles, 'You've no reason to be here.' You nod at his words before turning to leave, blinking a bit as your eyes readjust to the light outside. Noting the boat mentally, you make sure not to intrude upon the hippogriff's den again.";
 				WaitLineBreak;
-				now Resolution of Smashed Boat is 100;
+				now Resolution of Smashed Boat is 100; [Cain was ignored]
 				now Smashed Boat is resolved;
-	else if Resolution of Smashed Boat is 1:
+	else if Resolution of Smashed Boat is 1: [player knows about Cain's musk]
 		say "     Finding yourself once again at the shipwrecked boat, you find yourself wondering if it's been long enough for Cain to sort out whatever he needed to sort out. Given the subject matter and what he'd said last time, you have a guess as to what he's going to be doing. Approaching the opening in the hull, you pause to take a few sniffs of the air, finding that while you can detect the musk due to knowing what to look for, it's about what it was when you first approached the opening. Emboldened by this fact, you walk into the hull of the boat with a smile, calling out to announce to Cain that you'd arrived. Looking around to try and find where the hippogriff is, you find him sitting on his bench eating, his talons buried in a bag of chips, his eyes tracking you as you enter. His beak gains a smile and he nods, 'You're back. Good timing. Just got done with the water and I was just having a snack.'";
 		LineBreak;
 		say "     Your eyes can't help but stray to his massive sack, wet from it's time in the water, before you bring them back to his face. He doesn't seem to mind, however, bringing a chip to his beak and crunching on it, swallowing, before speaking again. 'So, you said that the people I tried to talk to were probably infected, right?' You nod in response to the question. 'I've seen all the crazy people out there, I just assumed it was my musk doing it this entire time.' He sighs. 'How many are left out there like you?' You can see his mood souring as his thoughts run wild, and you make an effort to reassure him; you weren't the only one with your mind intact, [if number of collected people > 0]in fact, you were starting to create a sort of safe-haven for those with their minds intact[else]you recall the various people with their minds seemingly still intact among your exploration[end if] Cain perks up at your words, smile returning to his beak. 'Really? That's good. Though, I'll admit I'm still hesitant to just approach out of the blue. Especially as given your reaction last time, I still need to manage my pheromones.' You nod, humming a bit as you think. Perhaps there's a way to help Cain with his musk issues?";
@@ -165,7 +167,7 @@ to say ResolveEvent Smashed Boat:
 		WaitLineBreak;
 		CainMigration;
 
-to ProvokeCain:
+to ProvokeCain: [Played provoked Cain's more aggressive side]
 	say "     You smirk at him, letting your eyes run over his body again, lingering on his leg-bowing balls before returning to his face, his frown deepening. You say 'Well, I was just admiring a rather well-endowed hippogriff'. Your expression falters a bit when he turns to face you fully, his expression gaining a tint of anger. 'You should leave.'";
 	LineBreak;
 	say "     [bold type]You consider his stance for a moment, should you continue? It might not end well[roman type][line break]";
@@ -190,7 +192,7 @@ to ProvokeCain:
 		LineBreak;
 		say "     Raising your hands, you placate the hippogriff, apologising for any offense. He doesn't seem to want to hear it at the moment, however, one of his hindlegs kicking the floorboard with a clop sound. Deciding to heed the warning, you back up until you're out of the boat, then turn and walk away. Perhaps if you come back later you can apologise for antagonising him.";
 
-to CainMigration:
+to CainMigration: [Player helps Cain find a new den]
 	say "     Stepping outside the shipwreck, you take a moment to breathe and clear your lungs while you wait for Cain, looking around as the waves lap nearby. It seemed like a moment of calm, with the only infected being far in the distance. Your eyes trace to something bobbing in the water against the hull of the ship. A small, inflatable octopus, a smile permanently plastered on its face with its eight tentacles pointing upwards around it. You consider it for a moment, realising that the tips of the tentacles were rather phallic. Would that make it a cocktopus? You chuckle at your mental joke, simultaneously wondering how in the world an inflatable octopus was made with dick-tipped tentacles. Your introspection is interrupted by the sound of disturbed sand, and you turn to see Cain stepping out of the hull with his backpack and bedroll on his back sitting between his wings.";
 	LineBreak;
 	say "     Cain seems to take a moment to breathe just as you did, his chest inflating before deflating. 'Mm, I'll miss the air here, to be honest. It's about as clean as it gets this close to the city.' He smiles, turning to you and walking up alongside. 'So, I should note that I don't really have any destination in mind. I haven't had the time to really scout out a new den. Do you have any suggestions?' Cain asks, the wind blowing away from you for the moment allowing him to stay close. You think for a moment before nodding, suggesting the library, saying that it's where you're holed up and [if number of collected people > 0]where you've taken others in need of a place to stay[else]where you plan to take others in need of a place to stay[end if]. 'Ah, strength in numbers. I don't really think putting me in a place with others for an extended period of time is a good idea.' You nod, before saying the library is pretty big, there's plenty of rooms he could stay in. He simply nods, before turning away. 'Well, we better get moving. I'll see this Library of yours and judge for myself.'";
@@ -201,7 +203,7 @@ to CainMigration:
 	LineBreak;
 	say "     'Mmm, good idea. Nearby, got a building to myself so I don't have to worry about my musk, might even have a shower'. [if library computer is powered]You comment that the showers should work as you'd managed to get the power working, making Cain chirp with excitement. 'I've cleaned myself with only salty water for so long, I can't wait to get properly clean!'[else]You comment that from what you've seen, the power isn't working, so the showers don't actually work. Cain frowns, 'Dang, I was hoping to be able to get properly clean.'[end if] Turning to start on the way towards the building, you walk alongside Cain in silence. It doesn't take you long to get to the front door of the building, opening the door for Cain and leading him inside.";
 	WaitLineBreak;
-	now Resolution of Smashed Boat is 3;
+	now Resolution of Smashed Boat is 3; [Cain moved to Abandoned Residence]
 	now Smashed Boat is resolved;
 	TraitGain "Cain Moved" for Cain;
 	Cain is now in Abandoned Residence;
