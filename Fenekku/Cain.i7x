@@ -1,19 +1,20 @@
 Cain by Fenekku begins here.
+
 [Version 1 of Cain by Fenekku]
 
 [Original Smashed Boat event by Sarokcat, rewritten for use by Fenekku]
 
-[Resolution of Smashed Boat:                ]
-[1: Learned about Cain's musk               ]
-[2: Provoked Cain                           ]
-[3: Cain moved to the Abandoned Residence   ]
-[100: Cain was ignored                      ]
+[Resolution of Smashed Boat:				]
+[1: Learned about Cain's musk				]
+[2: Provoked Cain							]
+[3: Cain moved to the Abandoned Residence	]
+[100: Cain was ignored						]
 
 Section 1 - NPC declaration
 
 Table of GameCharacterIDs (continued)
 object	name
-Cain    "Cain"
+Cain	"Cain"
 
 Cain is a man.
 ScaleValue of Cain is 4. [Larger than human-sized]
@@ -83,8 +84,6 @@ to CainSexMenu:
 			LineBreak;
 		-- "See if he tastes as good as he smells":
 			LineBreak;
-			
-
 
 Section 3 - Events
 
@@ -162,15 +161,14 @@ to say ResolveEvent Smashed Boat:
 				LineBreak;
 			-- "You can't think of anything at the moment":
 				LineBreak;
-				
-		[say "     As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";]
-		WaitLineBreak;
-		CainMigration;
-				
+	[say "     As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";]
+	WaitLineBreak;
+	CainMigration;
+
 to ProvokeCain:
 	say "     You smirk at him, letting your eyes run over his body again, lingering on his leg-bowing balls before returning to his face, his frown deepening. You say 'Well, I was just admiring a rather well-endowed hippogriff'. Your expression falters a bit when he turns to face you fully, his expression gaining a tint of anger. 'You should leave.'";
 	LineBreak;
-	say "     [bold type]You consider his stance for a moment, should you continue? It might not end well[roman type][line break]"
+	say "     [bold type]You consider his stance for a moment, should you continue? It might not end well[roman type][line break]";
 	LineBreak;
 	say "     ([link]Y[as]y[end link]) - Yes";
 	say "     ([link]N[as]n[end link]) - No";
@@ -182,7 +180,7 @@ to ProvokeCain:
 		WaitLineBreak;
 		SanLoss 10;
 		if humanity of Player < 0:
-			trigger ending "Cain's Musk Slut"
+			trigger ending "Cain's Musk Slut";
 			end the story saying "Your mind was broken by Cain's musk.";
 		else:
 			say "     Just when you think your senses might fully slip from your grasp, the hippogriff raises his balls off your face and steps away. Immediately, you take a gasp of air, trying to expel the pheromones as much as you can and take in relatively clean air. 'Had enough?' The hippogriff's voice sounds in your ears, and you move your head to look at him as he's standing close-by, watching you. You nod, huffing and panting, watching as he shakes his head before turning and heading over to the bench and table. Hopping up to sit on the bench, the hippogriff gives you time to recover. It only takes about a minute until you're able to think clearly again, your arousal calming to a background buzz. Rolling over, you start getting up off the floor, using a hand to rub at your nose before standing up fully and turning around to face the hippogriff.";
@@ -208,7 +206,6 @@ to CainMigration:
 	TraitGain "Cain Moved" for Cain;
 	Cain is now in Abandoned Residence;
 	move player to Abandoned Residence;
-
 
 Section 4 - Endings
 
