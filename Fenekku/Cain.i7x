@@ -201,7 +201,7 @@ to CainMigration: [Player helps Cain find a new den]
 	now Resolution of Smashed Boat is 3; [Cain moved to Abandoned Residence]
 	now Smashed Boat is resolved;
 	TraitGain "Cain Moved" for Cain;
-	Cain is now in Abandoned Residence;
+	move Cain to Abandoned Residence;
 	move player to Abandoned Residence;
 	say "     Cain looks around as he walks through the doorway, a smile creeping up on his face, 'This is a nice place.' He clops his way up to the Grandfather clock while you step to the side, giving him more room. 'I haven't seen one of these in a long time.' The clock keeps ticking away, well-cared-for mechanical parts operating to the to-and-fro swing of the pendulum. Turning away from the clock, Cain walks past you to hop up onto the couch, sighing as his balls sink a bit into the fabric. 'This is nice. Definitely a good new den. [if library computer is not powered]I'll have to head over to the library every so often to have a shower, I miss being properly clean.[end if] I'll be a good neighbor, visit every so often. I'd hop you'd do the same?' Cain smiles up at you.";
 
