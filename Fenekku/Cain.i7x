@@ -70,7 +70,7 @@ to say CainDesc:
 Section 2 - Menus
 
 to CainSexMenu:
-	say "     Cain is looking at you with interest, wondering what you're thinking to do with him.";
+	say "     Cain is looking at you with interest, wondering what you're thinking of doing with him.";
 	let Cain_Sex_Choices be a list of text;
 	add "Give his swollen sack a massage" to Cain_Sex_Choices;
 	if player is female:
@@ -81,12 +81,29 @@ to CainSexMenu:
 	if Cain_Sex_Choice is:
 		-- "Give his swollen sack a massage":
 			LineBreak;
+			Cain_SackMassage;
 		-- "Let him breed you":
 			LineBreak;
+			Cain_GetBred;
 		-- "Get his dick inside you":
 			LineBreak;
+			Cain_GetFucked;
 		-- "See if he tastes as good as he smells":
 			LineBreak;
+			Cain_TasteHim;
+
+to Cain_SackMassage: [Give his swollen sack a massage]
+	say "     You suggest giving his sack a massage. It looks heavy and is likely sore from him constantly lugging it around. Cain hums, before nodding with a smile. Getting up onto all fours, he turns around so his ass is facing towards you. 'You're certainly welcome to give my balls a rub.' He looks over his shoulder at you, his leonine tail flagging high to show you everything. It was quite the sight. You've seen it before, of course, but never quite in this context. His tubelike, tuft-tipped tail directs attention downwards to his puffy, donut-shaped asshole. Below that is his bulging taint, a good bit swollen from his sheer virility, holding the pipes that his cum will rush through from his prostate. The fact that it is so swollen makes you wonder how large his prostate is, and how much cum he unloads. Below his perineum lies the orbs you've tasked yourself with massaging. Large, heavy, pressing against the hippogriff's thighs and producing an exorbitant amount of musk.";
+	LineBreak;
+	say "     'Just be careful while you're back there.' Cain speaks as you walk up behind him, your hands reaching out to touch his sack. You feel immense warmth before your even come into contact with them, the orbs radiating heat like an oven. 'MMMusk, remember?' Cain huffs, his words devolving a bit into a hum as soon as you touch his scrote. You don't comment, trying to limit your breaths to keep your faculties as much as you can. Your focus stays on Cain's sack for the moment, your hands roaming over the semi-slick flesh. Sweat, you gather, which makes sense given how hot they feel. The sweat covers your palms, not very thick but present enough to stain your skin as you rub, bringing your hands down underneath to cradle the balls before moving them up towards his taint. The hippogriff hums, enjoying your touch with his tail hole in front of your face twitching again, seemingly clenching in his enjoyment.";
+
+to Cain_GetBred: [Let him breed you]
+
+
+to Cain_GetFucked: [Get his dick inside you]
+
+
+to Cain_TasteHim: [See if he tastes as good as he smells]
 
 Section 3 - Events
 
@@ -164,7 +181,7 @@ to say ResolveEvent Smashed Boat:
 		[say "     As he's speaking, his musk is once again getting stronger. This was a really big issue for him, that it's so potent as to build up this often. You shake your head, before suggesting to speak outside the boat so as to not be so affected by his musk. Cain nods in response. 'Yeah, let's go outside. I think this place is basically stained with my musk anyway with how long I've been here, I've seen some of the creatures sniffing around the entrance.' He gets up off of his bench, moving to grab his bag while you step outside.";]
 		CainMigration;
 
-to ProvokeCain: [Played provoked Cain's more aggressive side]
+to ProvokeCain: [Player provoked Cain's more aggressive side]
 	say "     You smirk at him, letting your eyes run over his body again, lingering on his leg-bowing balls before returning to his face, his frown deepening. You say 'Well, I was just admiring a rather well-endowed hippogriff'. Your expression falters a bit when he turns to face you fully, his expression gaining a tint of anger. 'You should leave.'";
 	LineBreak;
 	say "     [bold type]You consider his stance for a moment, should you continue? It might not end well[roman type][line break]";
