@@ -22,9 +22,9 @@ ResolveFunction of Airborne Shadow is "[ResolveEvent Airborne Shadow]".
 Sarea of Airborne Shadow is "Capitol".
 
 to say ResolveEvent Airborne Shadow:
-	if resolution of Airborne Shadow is 0:
+	if resolution of Airborne Shadow is 0: [First encounter]
 		say "     While exploring the molten ruins around the Capitol building, you spot a shadow passing overhead. Looking up in surprise, you peer through the haze of ash and smoke, trying to spot what the large thing is. It's difficult, but you think you see scales and membranous wings passing through the air. The visual you're able to catch immediately makes your mind turn to the Ebonflame creatures you've seen in the area. As soon as you make the connection, your eyes widen in horror. The silhouette doesn't match, however, so your thoughts quickly turn to the alternative that this is some other kind of creature. It doesn't give you much time to think about it further, as you see the huge form bank, wings shifting as it turns a one-eighty, starting back towards where you're standing!";
-	else if resolution of Airborne Shadow is 1:
+	else if resolution of Airborne Shadow is 1: [Subsequent encounters if not resolved]
 		say "     While exploring the molten ruins around the Capitol building, you spot a shadow passing overhead. Noting the silhouette as it passes on the ground, you realise you've fallen under the shadow you'd seen before, the Ebonflame-esque creature. Looking up through the haze of ash and smoke, you watch the creature once again turn back in your direction, as if on a patrol route through this area.";
 	else:
 		say "     ERROR: You shouldn't be seeing this! Please report this! AirborneShadow event resolution check has an invalid value of [resolution of Airborne Shadow].";
@@ -46,11 +46,12 @@ to say ResolveEvent Airborne Shadow:
 		if Player consents:
 			LineBreak;
 			say "     Decision made, you make a note of the location, ensuring you'll be able to avoid this place and the creature in the future. That done, you check the skies above, before making your way out of your hiding place and back to the Capitol building.";
-			now Resolution of Airborne Shadow is 100;
+			now Resolution of Airborne Shadow is 100; [Never encounter again]
+			now Airborne Shadow is resolved;
 		else:
 			LineBreak;
 			say "     You decide against avoiding this place. Checking the skies above, you make your way out of your hiding place and back to the Capitol building.";
-			now Resolution of Airborne Shadow is 1;
+			now Resolution of Airborne Shadow is 1; [Avoided for now]
 	else:
 		LineBreak;
 		say "     Deciding to risk running, you turn on your heel and kick off. Unfortunately, you realise rather quickly that there's no direction to run other than directly parallel with the airborne creature. Ruins surrounding you on either side, there's no visible break for you to dash through in order to get out of the creature's eye line. To make matters worse, the distances involved had made you miscalculate the speed the creature was travelling, and the shadow was quick to overtake you. A roar meets your ears, and you get the distinct sensation that the creature has not only spotted you, but is now actively hunting you. Risking a glance backwards, you briefly stumble as you confirm that yes, the creature is hunting you. Not only is it hunting you, but it's much, much closer than before. In fact, the creature was actively diving towards you!";
@@ -59,25 +60,24 @@ to say ResolveEvent Airborne Shadow:
 		LineBreak;
 		say "     [if player is not barecrotch]Once you're properly exposed to the creature, the[else]The[end if] pressure on your back shifts, and you could hear claws scraping against the concrete of the ground behind you. You don't get too long to think about it, as you felt hot breath wash over your exposed rear end, heralding a tongue that slips between your crack, sliding over your [if player is female]pussy and [end if]asshole. You let out a breath at the sensation, which is quickly followed by more of the same. That long, slick tongue sliding deep between your legs, [if player is male]slobbering over your balls[else]sliding over your crotch[end if] leaving warmth in its wake. You can only endure the sensations, unwilling to struggle under the creature's weight with its teeth so close to your sensitive bits. It takes its time with your lack of resistance, continuing to run its tongue through your crack, paying particular attention to your [if player is female]pussy[else]asshole[end if] as it slides over it, getting it slick with saliva. Seemingly satisfied with itself, the creature pulls its tongue away.";
 		WaitLineBreak;
-		if player is female:
+		if player is female: [Vaginal]
 			say "     It's not a moment afterwards that you feel a poking at your ass, the creature's maleness making itself known. It pokes and prods around your rear, amongst continued growls. The creature's claws remain atop you, enough that you can't resist even when the creature's cock finally finds its goal, and thrusts forward deep into your pussy. Immediately, your walls are forced to stretch around the creature's girth; it makes no effort to provide you with comfort and seemingly only uses you for its own pleasure. You can feel it draw back, readying a thrust that punches forward, spearing its cock deeper into your canal. The thrust rocks you, but you don't get time to adjust as the creature pulls back again, before thrusting forward, working itself into a rhythm that rubs its cock against your tight walls, poking and prodding deeper within you until it can't anymore.";
 			LineBreak;
 			say "     You can feel the shaft throbbing within you, pre gushing out against your innermost depths. Your inner barriers are battered, weakened with every thrust as that same pre leaks into your womb. The growling above you becomes mixed with breathy huffs, and your body betrays you by clenching on the invading shaft. Encouraging it to continue fucking you. The creature, of course, obliges, though you can sense it nearing the edge. It won't be too long until it unloads inside you. As it nears the edge, the creature adjusts its claw on your back, moving it up to your shoulder in order to start pulling you back against its crotch, working its cock just that little bit deeper within you. Its thrusts start to grow jerky, twitchy, before suddenly it gives a particularly hard thrust, burying its length with its tip pressed against your cervix. You feel its shaft pulse, twitch, before warmth starts to bloom inside you as it orgasms.";
 			WaitLineBreak;
 			say "     You can only moan and spasm as you cum alongside the creature, the feeling of it filling you, bloating your womb with its seed, sending you over the edge. As much as your abused pussy tries to grip the creature's cock, it isn't amicable to staying within you. As the spasms in its shaft fade, you feel it pull back, sliding out of you unceremoniously. It growls once as it removes its claw from your back, finally freeing you. The exertion, however, has you remaining on your stomach for the moment, even as you feel air rush over you, the creature's wings flapping to take it to the air once more. Flying away from you.";
 			CreatureSexAftermath "Player" receives "PussyDildoFuck" from "Feral Dragon";
-		else: [ANAL]
+		else: [Anal]
 			say "     It's not a moment afterwards that you feel a poking at your ass, the creature's maleness making itself known. It pokes and prods around your rear, amongst continued growls. The creature's claws remain atop you, enough that you can't resist even when the creature's cock pokes at your taint, just below your anus. Its claws seem to tense, and its growl turns dangerous. Seemingly disappointed by a lack of a hole where it expects one. Nonetheless, its cock slides upwards and instead catches against your much tighter asshole. With that, it thrusts forward deep into your bowels. You can't help but let out a moan, your anal walls forced to stretch around the creature's girth. The creature makes no effort to provide you with comfort and seemingly only uses you for its own pleasure. It gives you no time to adjust to its size, drawing back immediately and readying a thrust that punches forward, spearing its cock deeper into your depths. The thrust rocks you, and you immediately feel as the creature pulls back again, before once more thrusting forward. It works itself into a rhythm that slides its cock through your sphincter, poking and prodding deep within you.";
 			LineBreak;
 			say "     You can feel the shaft throbbing within you, pre gushing out into your bowels. Your prostate is stretched and battered, every thrust making your cock jump, leaking your own pre in response. The growling above you becomes mixed with breathy huffs, and your body betrays you by clenching on the invading shaft. Encouraging it to continue fucking you. The creature, of course, obliges, though you can sense it nearing the edge. It won't be too long until it unloads inside you. As it nears the edge, the creature adjusts its claw on your back, moving it up to your shoulder in order to start pulling you back against its crotch, working its cock just that little bit deeper within you. Its thrusts start to grow jerky, twitchy, before suddenly it gives a particularly hard thrust, burying its length even deeper within your anus. You feel its shaft pulse, twitch, before warmth starts to bloom inside you as it orgasms.";
 			WaitLineBreak;
 			say "     You can only moan and spasm as you cum alongside the creature, the feeling of it filling you, bloating your belly with its seed, sending you over the edge. As much as your abused anus tries to grip the creature's cock, it isn't amicable to staying within you. As the spasms in its shaft fade, you feel it pull back, sliding out of you unceremoniously. It growls once as it removes its claw from your back, finally freeing you. The exertion, however, has you remaining on your stomach for the moment, even as you feel air rush over you, the creature's wings flapping to take it to the air once more. Flying away from you.";
 			CreatureSexAftermath "Player" receives "AssDildoFuck" from "Feral Dragon"
-		[TODO: SEX SCENE. MALE-ANAL. FEMALE-VAGINAL. pregtype 2 for mpreg, look into how to set a 'blank' pregnancy.]
-		[TODO: ADD CHECKS FOR IF PLAYER HAS COCK OR NOT. ADD DEFINITIONS LIKE PLAYER SIZE, SHAPE, LOOK.]
-		WaitLineBreak; [TODO: WRITE ENDING TO SCENE]
-		say "     You take the moment to recover, allowing the creature's silhouette to fade into the distance. Once you’ve recovered enough - and you’re certain the creature is gone, you hide away your shame and straighten up, eyes on the skies above as you make your way back towards the Capitol Building, carrying a hefty load of the creature's seed.";
-		now Resolution of Airborne Shadow is 2;
+		[TODO: Pregnancy mechanics. HOW DO I HIJACK A PREGNANCY!?!?!? pregtype 2 for mpreg, 'Prometheus/Fang.i7x', 'Core Mechanics/Pregnancy.i7x']
+		WaitLineBreak;
+		say "     You take the moment to recover, allowing the creature's silhouette to fade into the distance. Once you've recovered enough - and you're certain the creature is gone, you hide away your shame and straighten up, eyes on the skies above as you make your way back towards the Capitol Building, carrying a hefty load of the creature's seed.";
+		now Resolution of Airborne Shadow is 2; [Player impregnated]
 		now Airborne Shadow is resolved;
 
 Section 2 - Antrax
