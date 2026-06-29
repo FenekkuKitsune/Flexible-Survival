@@ -88,6 +88,10 @@ to say ResolveEvent Airborne Shadow:
 		now Resolution of Airborne Shadow is 2; [Player impregnated]
 		now Airborne Shadow is resolved;
 
+[Pregnancy events would go here, including egg-laying.]
+
+[Potentially additional section for the dragon egg? Taking time for it to hatch.]
+
 Section 2 - Antrax
 
 Table of GameCharacterIDs (continued)
