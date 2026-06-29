@@ -6,6 +6,14 @@ Antrax by Fenekku begins here.
 [ 2: Impregnated by dragon			]
 [ 100: Permanently avoided			]
 
+[ HP of Antrax:		]
+[ 0: Not hatched	]
+[ 1: Not sexed		]
+
+[ Libido of Antrax:	]
+[ 0: Not in heat	]
+[ 1: In heat		]
+
 Section 1 - Events
 
 Table of GameEventIDs (continued)
@@ -127,8 +135,8 @@ Description of Antrax is "[AntraxDesc]".
 Conversation of Antrax is { "<This is nothing but a placeholder!>" }.
 The scent of Antrax is "[AntraxScent]".
 
-to say AntraxScent:
-	say "     ";
+to say AntraxScent: [Variations for in heat/not in heat]
+	say "     There's a sense of power in the air as you sniff near Antrax's form. There's a mix of scents, earthy yet free. You can't quite pinpoint it, though you don't dwell too long, not with Antrax's amused gaze following you.";
 
-to say AntraxDesc:
-	say "     ";
+to say AntraxDesc: [Variations for before/after sex, in heat/not in heat]
+	say "     Antrax was a full dragon at this point, towering over you when standing. They were thankfully still able to fit through doors and thus still able to follow you, but it was a bit of a tight squeeze. Their scales were strong now; nothing really able to put a dent in them. Power befitting a proper Western dragon. Their talons were extremely sharp, and they had to take great care when moving about to not scratch the floors. Even so, you've noted a few claw marks when they couldn't quite avoid it. Antrax's size meant that they had to look down at you, and you up at them, just to meet eyes. But there was always amusement within that green-slitted gaze, and always a smile upon that snout. Their purple scales were devoid of any marks from their time growing, having shed any marks upon their sleek form. Antrax's wings didn't fit in any buildings anymore; their wingspan having grown significantly to carry their form. But it was impressive. You're sure that, if you weren't worried about getting intercepted, Antrax would be able to carry you into the sky upon their back.";
